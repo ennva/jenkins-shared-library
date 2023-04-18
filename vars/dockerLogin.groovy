@@ -2,6 +2,6 @@
 
 import ennva.example.Docker
 
-def call(String host, String imageName) {
+def call(String host) {
     return new Docker(this).dockerLogin(host)
 }

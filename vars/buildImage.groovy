@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
 
-def call() {
+def call(String host, String imageName) {
     echo "Building docker image"
     withCredentials([usernamePassword(credentialsId: 'nexus-docker-repo', passwordVariable: 'PASS', usernameVariable: 'USERNAME')]){
-        sh('docker build -t localhost:8085/spring-boot-zero-hero:${VERSION} .')
-        sh('echo $PASS | docker login -u $USERNAME --password-stdin localhost:8085')
-        sh('docker push localhost:8085/spring-boot-zero-hero:${VERSION}')
+        sh('docker build -t $host/$imageName:${VERSION} .')
+        sh('echo $PASS | docker login -u $USERNAME --password-stdin $host')
+        sh('docker push $host/$imageName:${VERSION}')
     }
 }

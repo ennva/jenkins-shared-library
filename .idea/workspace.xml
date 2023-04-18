@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8aae87-8965-43d2-9c78-5558fa568d5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vars/dockerLogin.groovy" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vars/dockerPush.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ennva/example/Docker.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/ennva/example/Docker.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vars/buildImage.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/buildImage.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vars/buildJar.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/buildJar.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/dockerLogin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/dockerLogin.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

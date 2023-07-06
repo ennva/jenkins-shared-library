@@ -17,7 +17,7 @@ class Docker implements Serializable {
 
     def dockerLogin(String host = '') {
         script.withCredentials([script.usernamePassword(credentialsId: 'nexus-docker-repo', passwordVariable: 'PASS', usernameVariable: 'USERNAME')]){
-            script.sh "echo $script.PASS | docker login -u $script.USERNAME --password-stdin $host"
+            script.sh 'echo $script.PASS | docker login -u $script.USERNAME --password-stdin $host'
         }
     }
 
